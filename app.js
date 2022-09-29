@@ -24,3 +24,28 @@ class Circle {
 }
 const cir = new Circle(5,"blue")
 console.log(cir)
+
+
+class Person{
+    constructor(name,birthYear){
+        this.name = name
+        this.birthYear = birthYear
+    }
+}
+
+const personData1 = new Person("Ramesh", "2000")
+console.log(personData1)
+
+
+class TaxiCost{
+    constructor(price = 30){
+        this.price = price
+    }
+    kiloMeater(km){
+        return km * this.price
+    }
+}
+
+const uberPrice = new TaxiCost(24)
+console.log(uberPrice.kiloMeater(10))
+
